@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My Form</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+	 <!-- <link rel="stylesheet" href="css/base-style.css"> -->
+	 <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<h1 class="topH">The Code Review</h1>
+	<header class="head-container">
+		<!-- <h1>The Code Review</h1> -->
+		<h2>Signup for our newsletter</h2>
+		<p>Get the latest news on how your code is doing right in your box</p>
+		<hr>
+	</header>
+	<div class="container">
+		<form class="form-contact br">
+			<fieldset class="fieldset1">
+				<legend>Contact Information</legend>
+				<div class="flexbox">
+					<label for="name">Full Name</label>
+					<input type="text" id="name" name="FullName" placeholder="Required" required>
+				</div>
+				<div class="flexbox">
+					<label for="email">Email Address</label>
+					<input type="email" id="email" name="E_mail" placeholder="Required">
+				</div>
+				<div class="flexbox">
+					<label for="phone-number">Phone Number</label>
+					<input type="tel" id="phone-number" name="PhoneNumber" placeholder="Required">
+				</div>
+				<div class="flexbox">
+					<label for="address">Street Address</label>
+					<input type="text" id="address" name="StreetAddress">
+				</div>
+				<div class="flexbox">
+					<label for="city">City</label>
+					<input type="text" id="city" name="City">
+				</div>
+				<div class="flexbox">
+					<label for="state">State</label>
+					<select id="state" name="States" required>
+						<option value="" selected>Chose State</option>
+						<option value="AL">AL</option>
+						<option value="AK">AK</option>
+						<option value="AZ">AZ</option>
+						<option value="AR">AR</option>
+						<option value="CA">CA</option>
+						<option value="CO">CO</option>
+						<option value="CT">CT</option>
+						<option value="DE">DE</option>
+						<option value="FL">FL</option>
+						<option value="GA">GA</option>
+						<option value="HI">HI</option>
+						<option value="ID">ID</option>
+						<option value="IL">IL</option>
+						<option value="IN">IN</option>
+						<option value="IA">IA</option>
+						<option value="KS">KS</option>
+						<option value="KY">KY</option>
+						<option value="LA">LA</option>
+					</select>
+				</div>
+				<div class="zipbox">
+					<label for="zip">Zip Code</label>
+					<input class="zip-box" type="number" id="zip" name="ZipCode">
+				</div>
+				<hr>
+			</fieldset>
+
+			<fieldset class="fieldset2">
+				<legend>Newsletter</legend>
+				<label>Select the newsletters you would like to receive</label>
+
+				<input type="checkbox" id="html-news" name="UserChoice">
+				<label for="html-news">HTML News</label><br>
+
+				<input type="checkbox" id="css-news" name="UserChoice">
+				<label for="css-news">CSS News</label><br>
+
+				<input type="checkbox" id="javascript-news" name="UserChoice">
+				<label for="javascript-news">Javascript News</label><br>
+
+				<label>Newsletter format</label>
+
+				<input type="radio" id="HTML" name="FormatChoice">
+				<label for="HTML">HTML</label><br>
+
+				<input type="radio" id="plain-text" name="FormatChoice">
+				<label for="plain-text">Plain Text</label><br>
+
+				<label for="msg">Other topics you'd like to hear about</label>
+				<textarea id="msg" name="TextArea" rows="7"></textarea>
+
+
+				<input class="btn default" type="submit" value="Sign Up">
+			</fieldset>
+		</form>
+	</div>
+	<footer>
+		<p style="color: lightgray;">&copy; <em>The Code Review</em></p>
+	</footer>
+</body>
+</html>

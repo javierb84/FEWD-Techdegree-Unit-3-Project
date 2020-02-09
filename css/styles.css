@@ -1,0 +1,290 @@
+/*==================================
+===== Base Style ==================
+=================================*/
+
+/* Base Styles -------------------- */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	color: #384047;
+	margin: 0;
+}
+
+p + hr {
+	border: none;
+	height: 5px;
+	background-color: #000;
+	margin: 5px auto;
+	width: 95%;
+}
+
+hr {
+	border: none;
+	height: 2px;
+	background-color: #000;
+	margin: 30px auto;
+}
+
+h2,
+p {
+
+	margin: .5em auto;
+	text-align: center;
+}
+
+h2 + p {
+	width: 90%;
+	margin-bottom: 2.5em;
+}
+
+header > h2 {
+	width: 88%;
+}
+
+form {
+	margin-bottom: 15px;
+}
+
+header h2 {
+	font-size: 2em;
+}
+
+header p {
+	font-size: 1.2em;
+}
+
+fieldset {
+	border: none;
+	padding: 0;
+}
+
+legend {
+	font-size: 2.1em;
+	font-weight: 500;
+	margin-bottom: 1em;
+}
+
+/* Form Fields -------------------- */
+
+input,
+textarea,
+select {
+  font-size: 1em;
+  color: black;
+  font-weight: 300;
+  width: 100%;
+  border: none;
+  height: auto;
+  padding: 15px;
+  outline: 0;
+  margin-bottom: 1.2em;
+  border-radius: .3em;
+  border-bottom: 3px solid rgba(0,0,0, 0.05);
+  background-color: #e8eeef;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	border: 2px solid blue;
+	transition: 2s;
+}
+
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+  outline: .5px solid blue;
+}
+
+.zip-box {
+	font-size: 1em;
+	color: black;
+	font-weight: 300;
+	width: 50%;
+	border: none;
+	height: auto;
+	padding: 15px;
+	outline: 0;
+	margin-bottom: 0;
+	border-radius: .3em;
+	border-bottom: 3px solid rgba(0,0,0, 0.05);
+	background-color: #e8eeef;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+/*=====End of Base Style =============*/
+
+.head-container {
+	width: 100%;
+	margin: 0;
+}
+
+.topH {
+	width: 100%;
+	color: white;
+	background-color: #384047;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.form-contact {
+	padding-top: 20px;
+	background: #fff;
+	border-top: 2px solid black;
+}
+
+.container {
+	width: 95%;
+	margin: auto;
+}
+
+input::placeholder {
+	text-align: right;
+	color: #97999b81;
+}
+
+select:required:invalid {
+	color: #97999b81;
+}
+
+option {
+	color: #000;
+}
+
+a[target="_blank"] {
+	color: #39add1;
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+
+.btn {
+	cursor: pointer;
+	font-size: .9em;
+	font-weight: 400;
+	color: #fff;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.btn:hover {
+	opacity: .75;
+}
+
+.default {
+	background-color: #52bab3;
+}
+
+input[type="checkbox"] {
+	outline: none;
+	margin: 3px 3px 3px 4px;
+	display: inline-block;
+	width: 1em;
+}
+
+input[type="checkbox"] + label {
+	font-weight: 300;
+	font-size: .85em;
+	display: inline;
+	padding-left: 5px;
+}
+
+input[type="checkbox"]:checked + label {
+	font-weight: bold;
+}
+
+label[for="newsletter-format"] {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+input[type="radio"] {
+	border: .5px solid lightgrey;
+	border-radius: 50%;
+	outline: none;
+	margin: 3px 3px 3px 4px;
+	display: inline-block;
+	width: 1em;
+}
+
+input[type="radio"] + label {
+	font-weight: 300;
+	font-size: .85em;
+	display: inline;
+	padding-left: 5px;
+}
+
+input[type="radio"]:checked + label {
+	font-weight: bold;
+}
+
+input[type="radio"]:checked {
+	background-color: #39add1;
+}
+
+label[for="msg"] {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+footer {
+	width: 95%;
+	margin: 0 auto 30px auto;
+}
+
+.form-contact {
+	background-color: rgba(137, 176, 212, 0.459);
+}
+
+@media (min-width: 768px) {
+
+	.flexbox {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.zipbox {
+		display: flex;
+		flex-direction: row;
+    	flex-wrap: wrap;
+		align-items: baseline;
+	}
+
+	p + hr,
+	.container {
+		width: 60%;
+	}
+
+	.flexbox > label {
+		/* padding: .5em 1em .5em 0; */
+		flex: 1;
+	}
+
+	.flexbox > input {
+		flex: 2;
+	}
+
+	.flexbox > select {
+		flex: 2;
+	}
+
+	.zipbox > label {
+		flex: 0 0 32%;
+	}
+
+	.zipbox > input {
+		flex: 0.5;
+	}
+}
