@@ -20,6 +20,7 @@ p + hr {
 	background-color: #000;
 	margin: 5px auto;
 	width: 95%;
+	max-width: 750px;
 }
 
 hr {
@@ -70,6 +71,7 @@ legend {
 
 /* Form Fields -------------------- */
 
+button,
 input,
 textarea,
 select {
@@ -150,6 +152,7 @@ label {
 .container {
 	width: 95%;
 	margin: auto;
+	max-width: 750px;
 }
 
 input::placeholder {
